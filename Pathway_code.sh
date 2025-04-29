@@ -8,11 +8,7 @@ tar -xvzf diamond-linux64.tar.gz
 ls
 which diamond
 conda install -c bioconda diamond=2.0.15
-which diamond
-mv diamond ~/Paul/miniconda3/envs/biobakery3/bin/
-chmod +x ~/Paul/miniconda3/envs/biobakery3/bin/diamond
 diamond-version
-
 humann3_databases --download uniref : uniref90_diamond full /home/vamouda/Suriya/Meta_JIP/humann --update-config 
 wget http://huttenhower.sph.harvard.edu/humann_data/uniprot/uniref_annotated/uniref50_annotated_v201901b_full.tar.gz
 humann3_databases --download uniref uniref50_diamond /home/vamouda/Suriya/Meta_JIP/humann --update-config yes
